@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple and Sleek Webpage</title>
+    <style>
+        :root {
+            --background: #282a36;
+            --current-line: #44475a;
+            --foreground: #f8f8f2;
+            --comment: #6272a4;
+            --cyan: #8be9fd;
+            --green: #50fa7b;
+            --orange: #ffb86c;
+            --pink: #ff79c6;
+            --purple: #bd93f9;
+            --red: #ff5555;
+            --yellow: #f1fa8c;
+            --box-bg: #44475a;
+            --box-border: #6272a4;
+        }
+
+        body {
+            font-family: 'Inconsolata', monospace;
+            margin: 17px;
+            background-color: var(--background);
+            color: var(--foreground);
+        }
+
+        h2, h4 {
+            text-align: center;
+            margin: 2px;
+            color: var(--purple);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 21px;
+            justify-content: center;
+        }
+
+        .box {
+            font-size: 0.9em;
+            line-height: 1em;
+            background-color: var(--box-bg);
+            border: 1px solid var(--box-border);
+            border-radius: 3px;
+            padding: 20px;
+            margin: 10px 0;
+            overflow-x: auto;
+            width: 35%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            color: var(--foreground);
+        }
+
+        .box h3 {
+            color: var(--cyan);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: var(--foreground);
+        }
+
+        th, td {
+            padding: 2px;
+            text-align: left;
+            border: 1px solid var(--current-line);
+        }
+
+        @media (max-width: 700px) {
+            .box {
+                width: 75%;
+                max-width: none;
+            }
+        }
+
+        a {
+            color: var(--pink);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Los Angeles Dodgers @ Toronto Blue Jays</h2>
+    <h4>Shohei Ohtani vs Max Scherzer</h4>
+    <h4>Roof Closed, 0 mph, None</h4>
+    <h4>12:00</h4>
+
+    <div class="container">
+        <div class="box">
+            <h3>Shohei Ohtani</h3>
+            <table> <tr><td>Shohei Ohtani RHP:</td><td>AGE 31, PICK # </td></tr> <tr><td>WL  | ERA | IP:</td><td>1-1  | 2.87 | 47.0</td></tr> <tr><td>AVG | SLG:</td><td>.227 | .313</td></tr> <tr><td>K   | BB:</td><td>11.87 | 1.72</td></tr> <tr><td>BARREL | WIFF:</td><td>.104 | .325</td></tr> <tr><td>STRIKE 1 | MEATBALL:</td><td>.630 | .098</td></tr> <tr><td>LAST 4:</td><td></td></tr> <tr><td>09/23  @ Diamondbacks:</td><td>6.0 IP, 0 ER, 8 K, 0 BB, 5 H</td></tr> <tr><td>09/16 vs Phillies:</td><td>5.0 IP, 0 ER, 5 K, BB, 0 H</td></tr> <tr><td>09/05  @ Orioles:</td><td>3.2 IP, 0 ER, 5 K, BB, 3 H</td></tr> <tr><td>08/27 vs Reds:</td><td>5.0 IP, ER, 9 K, 2 BB, 2 H</td></tr> <tr><td>VS OPPONENT:</td><td></td></tr> <tr><td>8/27/22 vs Jays:</td><td>7.0 IP, 0 ER, 9 K, BB, 2 H</td></tr> <tr><td>5/26/22 vs Jays:</td><td>6.0 IP, 5 ER, 10 K, BB, 6 H</td></tr> <tr><td>CAREER:</td><td>528.2 IP, 176 ER, 670 K, 182 BB, 388 H</td></tr> <tr><td>1ST INNING:</td><td>14.0 IP, 4 ER, 17 K, 3 BB, 9 H</td></tr> <tr><td>RUNNER ON:</td><td>AVG .237, OBP .273, SLG .288, BB% 2.08</td></tr> <tr><td>Four-seam FB:</td><td>39%, 98 MPH, 2467 SPIN</td></tr> <tr><td>Sweeper:</td><td>23%, 85 MPH, 2594 SPIN</td></tr> <tr><td>Slider:</td><td>11%, 88 MPH, 2547 SPIN</td></tr> </table>
+        </div>
+        <div class="box">
+            <h3>Max Scherzer</h3>
+            <table> <tr><td>Max Scherzer RHP:</td><td>AGE 41, PICK #11 2006</td></tr> <tr><td>WL  | ERA | IP:</td><td>5-5  | 5.19 | 85.0</td></tr> <tr><td>AVG | SLG:</td><td>.262 | .497</td></tr> <tr><td>K   | BB:</td><td>8.68 | 2.44</td></tr> <tr><td>BARREL | WIFF:</td><td>.132 | .236</td></tr> <tr><td>STRIKE 1 | MEATBALL:</td><td>.650 | .096</td></tr> <tr><td>LAST 4:</td><td> </td></tr> <tr><td>09/24 vs Sox:</td><td>5.0 IP, 4 ER, 5 K, 0 BB, 10 H</td></tr> <tr><td>09/19  @ Royals:</td><td>0.2 IP, 7 ER, 2 K, BB, 7 H</td></tr> <tr><td>09/13 vs Orioles:</td><td>5.0 IP, 2 ER, 5 K, 2 BB, 4 H</td></tr> <tr><td>09/07  @ Yankees:</td><td>4.1 IP, 4 ER, 8 K, 4 BB, 3 H</td></tr> <tr><td>VS OPPONENT:</td><td></td></tr> <tr><td>8/8/25 vs Dodgers:</td><td>6.0 IP, 2 ER, 5 K, 3 BB, 6 H</td></tr> <tr><td>7/16/23 vs Dodgers:</td><td>7.0 IP, 0 ER, 6 K, 3 BB, 1 H</td></tr> <tr><td>CAREER:</td><td>2963.0 IP, 1059 ER, 3489 K, 779 BB, 2433 H</td></tr> <tr><td>1ST INNING:</td><td>16.2 IP, 24 ER, 17 K, 6 BB, 33 H</td></tr> <tr><td>RUNNER ON:</td><td>AVG .295, OBP .346, SLG .598, BB% 2.56</td></tr> <tr><td>Four-seam FB:</td><td>48%, 94 MPH, 2391 SPIN</td></tr> <tr><td>Slider:</td><td>24%, 86 MPH, 2404 SPIN</td></tr> <tr><td>Changeup:</td><td>14%, 85 MPH, 1353 SPIN</td></tr> </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h3>Los Angeles Dodgers</h3>
+            <table> <tr><td>LOS ANGELES DODGERS:</td><td>4-3</td></tr> <tr><td>R:</td><td>#02 825</td></tr> <tr><td>OPS:</td><td>#02 .768</td></tr> <tr><td>Shohei Ohtani:</td><td>AVG .282, HR 55, OBP .392, SLG .622</td></tr> <tr><td>Freddie Freeman:</td><td>AVG .295, HR 24, OBP .367, SLG .502</td></tr> <tr><td>Andy Pages:</td><td>AVG .272, HR 27, OBP .313, SLG .461</td></tr> <tr><td>Mookie Betts:</td><td>AVG .258, HR 20, OBP .326, SLG .406</td></tr> <tr><td>Teoscar Hernández:</td><td>AVG .247, HR 25, OBP .284, SLG .454</td></tr> <tr><td>Will Smith:</td><td>AVG .296, HR 17, OBP .404, SLG .497</td></tr> <tr><td>Michael Conforto:</td><td>AVG .199, HR 12, OBP .305, SLG .333 
+</td></tr> <tr><td>.LAST 10:</td><td>AVG , HR , OPS </td></tr> <tr><td>.Freddie Freeman:</td><td>AVG .314, HR 04, OBP .400, SLG .657</td></tr> <tr><td>.Shohei Ohtani:</td><td>AVG .275, HR 05, OBP .341, SLG .775</td></tr> <tr><td>.Austin Barnes:</td><td>AVG .281, HR 00, OBP .303, SLG .375</td></tr> <tr><td>.Tommy Edman:</td><td>AVG .205, HR 01, OBP .220, SLG .282</td></tr> <tr><td>.Michael Conforto:</td><td>AVG .250, HR 01, OBP .351, SLG .344</td></tr> <tr><td>.Miguel Rojas:</td><td>AVG .267, HR 01, OBP .267, SLG .467</td></tr> <tr><td>VS SP:</td><td></td></tr> <tr><td>RECENT SCORES:</td><td></td></tr> <tr><td>.LAD 5 @ TOR 4:</td><td>W- Yoshinobu Yamamoto  L- Shane Bieber</td></tr> <tr><td>..LAD 3 @ TOR 1:</td><td>W- Yoshinobu Yamamoto  L- Kevin Gausman</td></tr> <tr><td>vs RHP:</td><td>AVG .252, OBP .331, OPS .770</td></tr> <tr><td>vs LHP:</td><td>AVG .255, OBP .319, OPS .765</td></tr> <tr><td>Ahead /Count:</td><td>AVG .280, OBP .481, OPS 1.021</td></tr> <tr><td>Behind /Count:</td><td>AVG .203, OBP .214, OPS .546</td></tr> </table>
+        </div>
+        <div class="box">
+            <h3>Toronto Blue Jays</h3>
+            <table> <tr><td>TORONTO BLUE JAYS:</td><td>3-4</td></tr> <tr><td>R:</td><td>#04 798</td></tr> <tr><td>OPS:</td><td>#03 .760</td></tr> <tr><td>Bo Bichette:</td><td>AVG .311, HR 18, OBP .357, SLG .483</td></tr> <tr><td>Vladimir Guerrero Jr.:</td><td>AVG .292, HR 23, OBP .381, SLG .467</td></tr> <tr><td>George Springer:</td><td>AVG .309, HR 32, OBP .399, SLG .560</td></tr> <tr><td>Ernie Clement:</td><td>AVG .277, HR 09, OBP .313, SLG .398</td></tr> <tr><td>Alejandro Kirk:</td><td>AVG .282, HR 15, OBP .348, SLG .421</td></tr> <tr><td>Addison Barger:</td><td>AVG .243, HR 21, OBP .301, SLG .454</td></tr> <tr><td>Nathan Lukes:</td><td>AVG .255, HR 12, OBP .323, SLG .407 
+</td></tr> <tr><td>.LAST 10:</td><td>AVG , HR , OPS </td></tr> <tr><td>.Bo Bichette:</td><td>AVG .400, HR 02, OBP .457, SLG .650</td></tr> <tr><td>.George Springer:</td><td>AVG .342, HR 03, OBP .432, SLG .658</td></tr> <tr><td>.Daulton Varsho:</td><td>AVG .243, HR 02, OBP .263, SLG .432</td></tr> <tr><td>.Will Wagner:</td><td>AVG .286, HR 00, OBP .375, SLG .357</td></tr> <tr><td>.Ernie Clement:</td><td>AVG .242, HR 00, OBP .286, SLG .333</td></tr> <tr><td>.Nathan Lukes:</td><td>AVG .250, HR 01, OBP .323, SLG .500</td></tr> <tr><td>VS SP:</td><td></td></tr> <tr><td>RECENT SCORES:</td><td></td></tr> <tr><td>.LAD 5 @ TOR 4:</td><td>W- Yoshinobu Yamamoto  L- Shane Bieber</td></tr> <tr><td>..LAD 3 @ TOR 1:</td><td>W- Yoshinobu Yamamoto  L- Kevin Gausman</td></tr> <tr><td>vs RHP:</td><td>AVG .266, OBP .332, OPS .763</td></tr> <tr><td>vs LHP:</td><td>AVG .264, OBP .337, OPS .755</td></tr> <tr><td>Ahead  /Count:</td><td>AVG .303, OBP .486, OPS 1.018</td></tr> <tr><td>Behind /Count:</td><td>AVG .233, OBP .239, OPS .582</td></tr> </table>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
