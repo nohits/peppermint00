@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple and Sleek Webpage</title>
+    <style>
+        :root {
+            --background: #282a36;
+            --current-line: #44475a;
+            --foreground: #f8f8f2;
+            --comment: #6272a4;
+            --cyan: #8be9fd;
+            --green: #50fa7b;
+            --orange: #ffb86c;
+            --pink: #ff79c6;
+            --purple: #bd93f9;
+            --red: #ff5555;
+            --yellow: #f1fa8c;
+            --box-bg: #44475a;
+            --box-border: #6272a4;
+        }
+
+        body {
+            font-family: 'Inconsolata', monospace;
+            margin: 17px;
+            background-color: var(--background);
+            color: var(--foreground);
+        }
+
+        h2, h4 {
+            text-align: center;
+            margin: 2px;
+            color: var(--purple);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 21px;
+            justify-content: center;
+        }
+
+        .box {
+            font-size: 0.9em;
+            line-height: 1em;
+            background-color: var(--box-bg);
+            border: 1px solid var(--box-border);
+            border-radius: 3px;
+            padding: 20px;
+            margin: 10px 0;
+            overflow-x: auto;
+            width: 35%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            color: var(--foreground);
+        }
+
+        .box h3 {
+            color: var(--cyan);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            color: var(--foreground);
+        }
+
+        th, td {
+            padding: 2px;
+            text-align: left;
+            border: 1px solid var(--current-line);
+        }
+
+        @media (max-width: 700px) {
+            .box {
+                width: 75%;
+                max-width: none;
+            }
+        }
+
+        a {
+            color: var(--pink);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>$title1</h2>
+    <h4>$title2</h4>
+    <h4>$title3</h4>
+    <h4>$title4</h4>
+
+    <div class="container">
+        <div class="box">
+            <h3>$header1</h3>
+            $table1
+        </div>
+        <div class="box">
+            <h3>$header2</h3>
+            $table2
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h3>$header3</h3>
+            $table3
+        </div>
+        <div class="box">
+            <h3>$header4</h3>
+            $table4
+        </div>
+    </div>
+
+</body>
+</html>
+
