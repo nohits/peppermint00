@@ -606,7 +606,7 @@ foreach ($game in $matchupList) {
 
 
     if ($i -le 1) {
-        $originalFilePath2 = ".\hometemplate.html"
+        $originalFilePath2 = ".\.gitignore\hometemplate.html"
         $newFilePath2 = ".\updatedtemplate.html"
     } else {
         $originalFilePath2 = ".\updatedtemplate.html"
@@ -641,6 +641,7 @@ foreach ($game in $matchupList) {
 }
 
 #Read-Host "report has finished generating, press enter to exit"
+
 
 
 
