@@ -1,5 +1,5 @@
-$newFilePath3 = '.\hometemplate.html'
-$htmlContent = Get-Content -Path .\hometemplate11.html -Raw
+$newFilePath3 = '.\.gitignore\hometemplate.html'
+$htmlContent = Get-Content -Path .\.gitignore\hometemplate11.html -Raw
 $targetDate = '2025-11-01'
 $matchupList = (Invoke-RestMethod -Uri "https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=$targetDate").dates.games
 
@@ -32,4 +32,5 @@ if ($htmlContent -match '<div id="postlist">') {
 } else {
     Write-Host "Could not find <div id='postlist'> in the HTML file."
 }
+
 
